@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    
+    <style>
+        body {
+            background-color: rgb(242, 178, 250);
+            font-family: Arial, sans-serif;
+        }
+
+        .table-container {
+            width: 600px;
+            height: 772px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 24px;
+            border: 1px solid #ccc;
+        }
+
+        .view-link {
+            text-align: center;
+            font-size: 14px;
+            color: gray;
+            margin: 24px;
+        }
+
+        table {
+            width: 576px;
+            table-layout: fixed;
+            border-collapse: collapse;
+            margin-top: 48px;
+                         
+        }
+
+        th, td {
+            padding: 0 16px;
+            height: 56px;
+        }
+
+        th {
+            text-align: left;
+            border-bottom: 1px solid rgba(191, 194, 201);
+        }
+
+        td {
+            border-bottom: 1px solid rgb(191, 194, 201);
+        }
+
+        td:first-child {
+            text-align: left;
+        }
+
+        td:first-child, th:first-child {
+            color: gray;
+        }
+
+        td:nth-child(2), td:nth-child(3), th:nth-child(2), th:nth-child(3) {
+            text-align: right;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .header {
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: auto 15px;
+        }
+
+        h1 {
+            color: black;
+            font-size: 28px;
+            font-weight: 550;
+            margin: 5px;
+            line-height: 36px;
+        }
+
+        h2 {
+            color: rgba(102, 112, 133, 1);
+            font-size: 15px;
+            margin: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            line-height: 24px;
+        }
+
+        .footer {
+            text-align: center;
+            padding-bottom: 20px;
+            
+        }
+
+        .footer table {
+            width: 100%;
+        }
+
+        .footer td {
+            border: none;
+            height: 24px;
+            padding: 0;
+        }
+
+        .footer tr:not(:last-child) {
+            border-bottom: 4px solid transparent;
+        }
+
+        .footer img {
+            width: 120px;
+            height: 56px;
+        }
+
+        .footer .company-name {
+            font-weight: bold;
+            color: black;
+           
+        }
+
+        .footer .address {
+            color: gray;
+                         
+        }
+
+        tfoot td {
+            font-weight: bold;
+        }
+
+                tfoot td:nth-child(2) {
+            font-weight: normal;
+        }
+        .column-1 {
+            width: 370px;
+        }
+        .column-2 {
+            width: 40px;
+        }
+        .column-3 {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table-container">
+        <div class="view-link">View in browser</div>
+        <div class="logo">
+            <img src="./images/logo.png" alt="Logo">
+        </div>
+        <div class="header">
+            <h1>Functional Style</h1>
+            <h2>Combine practicality and style effortlessly with our furniture, offering functional designs that enhance your living space.</h2>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="column-1">Item</th>
+                    <th class="column-2">Qty</th>
+                    <th class="column-3">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Elegant Feast</td>
+                    <td>2</td>
+                    <td>$499.99</td>
+                </tr>
+                <tr>
+                    <td>Modern Fusion</td>
+                    <td>2</td>
+                    <td>$699.99</td>
+                </tr>
+                <tr>
+                    <td>Rustic Charm</td>
+                    <td>2</td>
+                    <td>$399.99</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>6</td>
+                    <td>$3194.99</td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="footer">
+            <table>
+                <tr>
+                    <td><img src="./images/logo.png"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="company-name">Acme Corporation</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="address">Think Different</td>
+                    <td class="address">123 Main Street Anywhere, CA 12345</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
